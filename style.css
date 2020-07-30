@@ -1,0 +1,27 @@
+.grid {
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  border: groove 20px blue;
+}
+div {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.valid:hover,
+.bomb:hover {
+  background-color: burlywood;
+  cursor: crosshair;
+}
+.checked {
+  background-color: orangered;
+}
+
+.bomb {
+}
