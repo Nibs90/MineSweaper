@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let flags = 0;
   let squares = [];
   let isGameOver = false;
+  const lask = document.getElementById("laskuri");
 
   //Creating a Board
   function createBoard() {
@@ -13,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const emptyArray = Array(width * width - bombAmount).fill("valid");
     const gameArray = emptyArray.concat(bombsArray);
     const shuffledArray = gameArray.sort(() => Math.random() - 0.5);
-    console.log(shuffledArray);
 
     for (let i = 0; i < width * width; i++) {
       const square = document.createElement("div");
@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square.innerHTML =
           "<img src='pics/flag.png' width='50' height='50' style='margin-top:1px;'>";
         flags++;
+        lask.innerHTML = `Score: ${flags}`;
         checkForWin();
       } else {
         square.classList.remove("flag");
@@ -173,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
     squares.forEach((square) => {
       if (square.classList.contains("bomb")) {
         square.innerHTML = "💥";
+        document.getElementById("overlay").style.display = "block";
       }
     });
   }
