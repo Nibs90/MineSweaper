@@ -1,4 +1,12 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: aliceblue;
+  text-align: center;
+}
 .grid {
+  margin: auto;
   height: 600px;
   width: 600px;
   display: flex;
@@ -13,6 +21,9 @@ div {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   font-weight: bold;
+  border: black 3.3px none;
+  background-image: url("pics/bg_div.png");
+  background-repeat: no-repeat;
 }
 .valid:hover,
 .bomb:hover {

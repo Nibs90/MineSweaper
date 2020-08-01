@@ -82,7 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!square.classList.contains("checked") && flags < bombAmount) {
       if (!square.classList.contains("flag")) {
         square.classList.add("flag");
-        square.innerHTML = "<img src='pics/flag.png' width='60' height='60'>";
+        square.innerHTML =
+          "<img src='pics/flag.png' width='50' height='50' style='margin-top:1px;'>";
         flags++;
         checkForWin();
       } else {
