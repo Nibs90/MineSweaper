@@ -1,15 +1,13 @@
 body {
   background-color: black;
 }
-
 h1 {
   color: aliceblue;
   text-align: center;
   margin: auto;
 }
-
 #laskuri {
-  color: #39ff14;
+  color: rgb(57, 255, 20);
   margin: auto;
   text-align: center;
   font-size: 25px;
@@ -30,20 +28,15 @@ h1 {
   margin-top: 10%;
   margin-left: -3%;
 }
-
 .grid {
   margin: auto;
   height: 600px;
   width: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: grey;
   border: groove 20px blue;
 }
-
 div {
   height: 60px;
   width: 60px;
@@ -55,14 +48,14 @@ div {
   background-image: url("pics/bg_div.png");
   background-repeat: no-repeat;
 }
-
 .valid:hover,
 .bomb:hover {
   background-color: burlywood;
   cursor: crosshair;
 }
-
 .checked {
   background-color: orangered;
 }
-/*# sourceMappingURL=style.css.map */
+
+.bomb {
+}

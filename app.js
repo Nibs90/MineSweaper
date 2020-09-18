@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         addFlag(square);
       };
     }
+    lask.innerHTML = `Bombs left: ${bombAmount}`;
 
     //Add Numbers
     for (let i = 0; i < squares.length; i++) {
@@ -85,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square.innerHTML =
           "<img src='pics/flag.png' width='50' height='50' style='margin-top:1px;'>";
         flags++;
-        lask.innerHTML = `Score: ${flags}`;
+        lask.innerHTML = `Bombs left: ${bombAmount - flags}`;
         checkForWin();
       } else {
         square.classList.remove("flag");
